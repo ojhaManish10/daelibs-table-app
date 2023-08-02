@@ -2,36 +2,32 @@ This documentation provides an overview of the React application that renders a 
 
 Table of Contents:
 
-1. Introduction
+###1. Introduction
 
     Purpose
     Features
     Technologies Used
 
-2. Installation
+###2. Installation
 
     Prerequisites
     Getting Started
 
-3. Usage
-
+###3. Usage
     Running the Application
     Interacting with the Table
 
-4. Components
-
+###4. Components
     App.js
     List.js
     List.css
 
-5. Styling
-
+###5. Styling
     Table Styling
     Hover Effects
     Success/Fail Labels
 
-6. Enhancements
-
+###6. Enhancements
     Customization Options
     Adding More Data
     Integration with APIs
