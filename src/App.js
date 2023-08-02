@@ -1,6 +1,6 @@
 import React from 'react';
 import List from './components/List';
-import './App.css'; // You can include your custom CSS styles here
+import './App.css';
 
 function App() {
   const data = [
