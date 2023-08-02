@@ -1,70 +1,95 @@
-# Getting Started with Create React App
+This documentation provides an overview of the React application that renders a table with success and fail labels based on the comparison between the actual and target scores. The table is designed with a modern and visually appealing interface.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Table of Contents:
 
-## Available Scripts
+1. Introduction
 
-In the project directory, you can run:
+    Purpose
+    Features
+    Technologies Used
 
-### `npm start`
+2. Installation
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+    Prerequisites
+    Getting Started
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+3. Usage
 
-### `npm test`
+    Running the Application
+    Interacting with the Table
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+4. Components
 
-### `npm run build`
+    App.js
+    List.js
+    List.css
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+5. Styling
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+    Table Styling
+    Hover Effects
+    Success/Fail Labels
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+6. Enhancements
 
-### `npm run eject`
+    Customization Options
+    Adding More Data
+    Integration with APIs
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+    
+1. Introduction:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Purpose: The application aims to display a table of data with relevant success and fail labels, indicating whether the actual score for each entry meets the target score or not. The main goal is to provide users with a visually appealing and interactive table representation.
 
-## Learn More
+Features: The application includes the following features:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+A responsive and visually appealing table layout.
+Hover effect on table rows for a more interactive experience.
+Success and fail labels displayed in a button-like style, indicating target achievement.
+Modern styling with subtle box-shadow and rounded corners for the table container.
+Technologies Used: The application is built using React, a popular JavaScript library for building user interfaces. CSS is utilized for styling, and the application is designed to be responsive and compatible with various devices.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+2. Installation:
 
-### Code Splitting
+Prerequisites: Ensure you have Node.js and npm (Node Package Manager) installed on your system.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Getting Started: To run the application, follow these steps:
 
-### Analyzing the Bundle Size
+Download or clone the repository to your local machine.
+Navigate to the project directory in your terminal or command prompt.
+Run npm install to install the required dependencies.
+After the installation, run npm start to start the development server.
+The application will be accessible at http://localhost:3000 in your web browser.
+3. Usage:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Running the Application: Once the application is running, you can access it through your web browser using the provided URL (http://localhost:3000). The table will be displayed with sample data.
 
-### Making a Progressive Web App
+Interacting with the Table: The table presents data for each entry with columns: "First Name," "Last Name," "Target," "Actual," and "Points." Rows with hover effect will change their background color to coral, providing a visual feedback when the user hovers over them. The "Success" and "Fail" labels in the "Actual" column indicate whether the actual score meets the target score. Green represents success, while red represents fail.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+4. Components:
 
-### Advanced Configuration
+App.js: The main component that renders the application. It imports the List component and provides sample data for rendering the table.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+List.js: This component is responsible for rendering the table and data. It receives the data as props and maps through it to generate table rows with success and fail labels based on the actual and target scores.
 
-### Deployment
+List.css: The CSS file for styling the components, including the table, hover effects, and success/fail labels.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+5. Styling:
 
-### `npm run build` fails to minify
+Table Styling: The table is styled with a subtle box-shadow and rounded corners to give it a modern appearance. The header row has a slightly lighter gray background color to distinguish it from the data rows.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Hover Effects: When hovering over the table rows, the background color changes to a soft coral color, providing a smooth transition and interactivity.
+
+Success/Fail Labels: The "Success" and "Fail" labels are styled as buttons within the table cells. The labels have different background colors (green for success and red for fail) to indicate target achievement.
+
+6. Enhancements:
+
+Customization Options: Users can customize the table appearance, such as changing colors, font sizes, and spacing, by modifying the CSS styles in List.css.
+
+Adding More Data: The application can handle larger datasets by providing additional entries to the data array in App.js. The table will dynamically render the data accordingly.
+
+Integration with APIs: For real-world applications, data can be fetched from APIs or databases by using asynchronous functions like fetch or integrating with backend services.
+
+

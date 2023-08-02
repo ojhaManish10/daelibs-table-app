@@ -1,25 +1,50 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import List from './components/List';
+import './App.css'; // You can include your custom CSS styles here
 
 function App() {
+  const data = [
+    {
+      "name": "Lauren Vickers",
+      "target": 90,
+      "actual": 95,
+      "points": 69
+    },
+    {
+      "name": "Shazia Darby",
+      "target": 80,
+      "actual": 88,
+      "points": 26
+    },
+    {
+      "name": "Zara Cain",
+      "target": 85,
+      "actual": 81,
+      "points": 124
+    },
+    {
+      "name": "Clair Newton",
+      "target": 80,
+      "actual": 22,
+      "points": 82
+    },
+    {
+      "name": "April Bruce Kieran",
+      "target": 90,
+      "actual": 92,
+      "points": 26
+    }
+  ];
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <List data={data} />
     </div>
   );
 }
 
 export default App;
+
+
+
+
